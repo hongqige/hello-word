@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%- theme.title%></title>
+    <meta charset="UTF-8">
+    <%- css('css/main.css')%>
+</head>
+<body>
+    <div id="mian">
+
+        <aside id="#aside">
+            <%- include('aside.ejs')%>
+        </aside>
+
+        <nav id="#nav">
+            <%- include('nav.ejs')%>
+        </nav>
+
+        <div id="content">
+            <%- body%>
+        </div>
+    </div>
+
+<%- js('js/main.js')%>
+</body>
+</html>
+
