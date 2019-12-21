@@ -41,12 +41,18 @@ external_link:
   exclude:
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
+#highlight:
+#  enable: true
+#  line_number: true
+#  auto_detect: false
+#  tab_replace:
+# 关闭默认的代码高亮,这样才能使用自己下载的代码高亮风格
 highlight:
-  enable: true
-  line_number: true
+  enable: false
+  line_number: false
   auto_detect: false
   tab_replace:
 
