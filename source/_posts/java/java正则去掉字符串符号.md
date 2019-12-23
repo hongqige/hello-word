@@ -4,7 +4,7 @@ date: 2019-12-20 13:51:03
 tags: java
 categories: java
 ---
-
+<!-- toc -->
 ### 去除中文
 ```
         String REGEN_CHINESE = "[\u4e00-\u9fa5]";

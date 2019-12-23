@@ -1,7 +1,27 @@
 $(document).ready(function () {
+    hljs.initHighlightingOnLoad();
     clickTreeDirectory();
     searchTree();
+    pjaxLoad();
+    showArticleIndex();
 });
+
+//pjax局部刷新
+function pjaxLoad() {
+    $(document).pjax("#tree a", "#content", {fragment: "#content", timeout: 8000});
+    $(document).pjax("#menu a", "#content", {fragment: "#content", timeout: 8000});
+    $(document).on({
+        "pjax:complete": function (e) {
+            $("pre code").each(function (i, block) {
+                hljs.highlightBlock(block);
+            });
+
+            //添加active
+            $("#tree .active").removeClass("active");
+            e.relatedTarget.parentNode.classList.add("active");
+        }
+    });
+}
 
 // 点击目录事件
 function clickTreeDirectory() {
@@ -83,8 +103,69 @@ function searchTree() {
             $("#tree ul").css("display", "none");
             var searchResult = $("#tree li").find("a:contains('" + inputContent + "')");
             if (searchResult.length) {
-                showActiveTree(searchResult.parent(),false);
+                showActiveTree(searchResult.parent(), false);
             }
         }
+    });
+}
+
+function showArticleIndex() {
+    //先刷一遍文章有哪些节点，把h1,h2,h3加入节点列表，然后循环处理(目录有三级就够用了，不够可以加)
+    var h1List = h2List = h3List = [];
+    var labelList = $("#article").children();
+    for (var i = 0; i < labelList.length; i++) {
+        if ($(labelList[i]).is("h1")) {
+            h2List = new Array();
+            h1List.push({node: $(labelList[i]), id: i, children: h2List});
+        }
+        if ($(labelList[i]).is("h2")) {
+            h3List = new Array();
+            h2List.push({node: $(labelList[i]), id: i, children: h3List});
+        }
+
+        if ($(labelList[i]).is("h3")) {
+            h3List.push({node: $(labelList[i]), id: i, children: []});
+        }
+    }
+
+    //闭包递归，返回树状html格式的文章目录索引
+    function show(tocList) {
+        var content = "<ul>";
+        tocList.forEach(function (toc) {
+            toc.node.before("<span class='anchor' id= '_label" + toc.id + "'><span> ");
+            if (toc.children == 0) {
+                content += "<li><a href='#_label" + toc.id + "'>" + toc.node.text() + "</a></li>";
+            } else {
+                content += "<li><a href='#_label" + toc.id + "'>" + toc.node.text() + "</a>" + show(toc.children) + "</li>";
+            }
+        });
+        content += "</ul>";
+        return content;
+    }
+
+    //组合成div方便css设计
+    $("#aside #toc").empty();
+    $("#aside #toc").append(show(h1List));
+
+    $("#toc a").on("click", function (e) {
+        e.preventDefault();
+        //获取当前点击的a标签，滚动到对应位置（像word的索引一样)
+        var target = $(this.hash);
+        $("body,html").animate({"scrollTop": target.offset().top}, 500);
+    });
+
+    //监听浏览器滚动条，浏览过的标签改变颜色
+    $(window).on("scroll", function (e) {
+        var anchorList = $(".anchor");
+        anchorList.forEach(function () {
+            var tocLink = $("#toc a[href='#" + $(this).attr("id") + "']");
+            var anchorTop = $(this).offset().top;
+            var windowTop = $(window).scrollTop();
+            if (anchorTop <= windowTop + 50) {
+                tocLink.addClass("read");
+            } else {
+                tocLink.removeClass("read");
+            }
+        });
     });
 }

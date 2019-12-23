@@ -54,33 +54,34 @@
         });
 
         // 循环输出html结构
-        input.forEach(function (node) {
-            if (node.children.length == 0){
+    input.forEach(function (node) {
+    if (node.children.length == 0){
     %>
-                <ul>
-                    <li class="file <%- (is_post() && node.post._id == page._id) ? 'active' : '' %>">
-                        <a href="<%- config.root %><%- node.post.path %>">
-                            <i class="fa fa-file"></i>
-                            <%- node.title %>
-                        </a>
-                    </li>
-                </ul>
+        <ul>
+            <li class="file <%- (is_post() && node.post._id == page._id) ? 'active' : '' %>">
+                <a href="<%- config.root %><%- node.post.path %>">
+                    <i class="fa fa-file"></i>
+                    <%- node.title %>
+                </a>
+            </li>
+        </ul>
     <%
-            }else{
+    }else{
     %>
-                <ul>
-                    <li class="directory">
-                        <a href="#" class="directory">
-                            <i class="fa fa-folder"></i>
-                            <%- node.title %>
-                        </a>
-                        <%- showTree(node.children) %>
-                    </li>
-                </ul>
+        <ul>
+            <li class="directory">
+                <a href="#" class="directory">
+                    <i class="fa fa-folder"></i>
+                    <%- node.title %>
+                </a>
+                <%- showTree(node.children) %>
+            </li>
+        </ul>
     <%
-            }
-        });
+    }
+    });
     }
     showTree(pathToTree(site.posts))
     %>
+    <div id="toc"></div>
 </div>

@@ -107,3 +107,12 @@ search:
   versionPath: searchVersion.txt
   field: post
   #field: post, page or all
+toc:
+  maxdepth: 3
+  class: toc
+  slugify: transliteration
+  decodeEntities: false
+  anchor:
+    position: after
+    symbol: '#'
+    style: header-anchor
