@@ -10,7 +10,7 @@ html，body {
 }
 
 aside {
-    width: 300px;
+    width: 310px;
     height: 100%;
     position: fixed;
     background: #262a30;
@@ -68,19 +68,31 @@ aside input {
 }
 
 /*搜索图标*/
+/*aside #search i.fa.fa-search {*/
 aside #search i.fa.fa-search {
     position: absolute;
     top: 0;
     right: 0;
-    color: #757575;
+    /*color: #757575;*/
+    color: #999;
     font-size: 20px;
     width: 40px;
     height: 50px;
     background: #131417;
     text-align: center;
     line-height: 2.5;
+    text-decoration: none;
 }
 
+aside #search #search-icon:hover{
+    cursor: pointer;
+    color:#87daff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
 /*滚动条*/
 aside {
     overflow-y: scroll;

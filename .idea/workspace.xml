@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eaafcfe0-8341-41f9-99ab-8446a66debcd" name="Default Changelist" comment="看下分支问题">
-      <change afterPath="$PROJECT_DIR$/themes/yuxing/source/lib/jquery.pjax.js" afterDir="false" />
+    <list default="true" id="eaafcfe0-8341-41f9-99ab-8446a66debcd" name="Default Changelist" comment="文章目录">
+      <change afterPath="$PROJECT_DIR$/source/_posts/mysql/mysql实现有则更新，无则插入.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/mysql/创建中文视图失败解决.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/mysql/常用操作.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/oracle/oracle体育馆人流.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/oracle/oracle学生排名.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/oracle/oracle连续值.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/java/java正则去掉字符串符号.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/java/java正则去掉字符串符号.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/yuxing/layout/aside.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yuxing/layout/aside.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yuxing/layout/layout.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yuxing/layout/layout.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/yuxing/source/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yuxing/source/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/yuxing/source/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yuxing/source/js/main.js" afterDir="false" />
     </list>
@@ -24,21 +26,24 @@
     <session id="1918361694">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="DEALLOCATE" value="1" />
+          <entry key="EXECUTE" value="1" />
           <entry key="css" value="1" />
           <entry key="ejs" value="7" />
           <entry key="ico" value="1" />
           <entry key="jpg" value="3" />
           <entry key="js" value="3" />
           <entry key="json" value="2" />
-          <entry key="md" value="3" />
+          <entry key="md" value="11" />
           <entry key="png" value="3" />
           <entry key="styl" value="1" />
           <entry key="svg" value="5" />
@@ -53,7 +58,7 @@
           <entry key="Image" value="7" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="3" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="13" />
           <entry key="SVG" value="5" />
           <entry key="Stylus" value="1" />
           <entry key="XML" value="1" />
@@ -62,20 +67,20 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="368" />
-          <entry key="ejs" value="39" />
-          <entry key="js" value="1928" />
-          <entry key="md" value="7" />
-          <entry key="txt" value="10" />
+          <entry key="css" value="516" />
+          <entry key="ejs" value="80" />
+          <entry key="js" value="2131" />
+          <entry key="md" value="73" />
+          <entry key="txt" value="19" />
           <entry key="yml" value="85" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="368" />
-          <entry key="EJS" value="39" />
-          <entry key="JavaScript" value="1928" />
-          <entry key="PLAIN_TEXT" value="17" />
+          <entry key="CSS" value="516" />
+          <entry key="EJS" value="80" />
+          <entry key="JavaScript" value="2131" />
+          <entry key="PLAIN_TEXT" value="92" />
           <entry key="YAML" value="85" />
         </counts>
       </usages-collector>
@@ -84,46 +89,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/yuxing/layout/index.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/yuxing/layout/post.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/yuxing/layout/aside.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="84" column="6" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/yuxing/source/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="284" column="19" selection-start-line="284" selection-start-column="19" selection-end-line="284" selection-end-column="19" />
+            <state relative-caret-position="81">
+              <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+              <folding>
+                <element signature="n#div#1;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/yuxing/source/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-209">
+              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/yuxing/source/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="143" column="5" lean-forward="true" selection-start-line="143" selection-start-column="5" selection-end-line="143" selection-end-column="5" />
+            <state relative-caret-position="3104">
+              <caret line="153" column="37" selection-start-line="153" selection-start-column="37" selection-end-line="153" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -131,17 +121,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/java/java正则去掉字符串符号.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state relative-caret-position="-135">
+              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
+        <entry file="file://$PROJECT_DIR$/source/_posts/hello-world.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="115" column="19" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
+            <state relative-caret-position="351">
+              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -189,9 +179,16 @@
         <option value="$PROJECT_DIR$/themes/yuxing/layout/layout.ejs" />
         <option value="$PROJECT_DIR$/source/_posts/java/java正则去掉字符串符号.md" />
         <option value="$PROJECT_DIR$/_config.yml" />
-        <option value="$PROJECT_DIR$/themes/yuxing/source/css/main.css" />
         <option value="$PROJECT_DIR$/themes/yuxing/layout/aside.ejs" />
         <option value="$PROJECT_DIR$/themes/yuxing/source/js/main.js" />
+        <option value="$PROJECT_DIR$/source/_posts/mysql实现有则更新，无则插入.md" />
+        <option value="$PROJECT_DIR$/source/_posts/常用操作.md" />
+        <option value="$PROJECT_DIR$/source/_posts/创建中文视图失败解决.md" />
+        <option value="$PROJECT_DIR$/source/_posts/oracle学生排名.md" />
+        <option value="$PROJECT_DIR$/themes/yuxing/source/css/main.css" />
+        <option value="$PROJECT_DIR$/source/_posts/oracle体育馆人流.md" />
+        <option value="$PROJECT_DIR$/source/_posts/oracle连续值.md" />
+        <option value="$PROJECT_DIR$/source/_posts/真的只是作为测试.md" />
       </list>
     </option>
   </component>
@@ -224,7 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,6 +245,20 @@
               <item name="source" type="462c0819:PsiDirectoryNode" />
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HexoFirst" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HexoFirst" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HexoFirst" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HexoFirst" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+              <item name="oracle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HexoFirst" type="b2602c69:ProjectViewProjectNode" />
@@ -303,6 +313,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,6 +323,10 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ownSpace\HexoFirst\source\_posts\oracle" />
+      <recent name="D:\ownSpace\HexoFirst\source\_posts\mysql" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ownSpace\HexoFirst\themes\yuxing\source\lib" />
       <recent name="D:\ownSpace\HexoFirst\themes" />
@@ -341,7 +356,8 @@
       <updated>1572491015036</updated>
       <workItem from="1572491016273" duration="46000" />
       <workItem from="1572491069959" duration="3986000" />
-      <workItem from="1577085396097" duration="15897000" />
+      <workItem from="1577085396097" duration="15986000" />
+      <workItem from="1577276491230" duration="2795000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/hongqige/hello-word&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml&#10;#&#9;_config.yml&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;source/_posts/hello-world.md&#10;#&#9;themes/3-hexo">
       <created>1576926170023</created>
@@ -350,15 +366,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576926170023</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="文章目录">
+      <created>1577106432728</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577106432728</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21650000" />
+    <option name="totallyTimeSpent" value="24534000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -374,7 +396,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28338763" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.34527686" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -398,7 +420,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge branch 'master' of https://github.com/hongqige/hello-word&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml&#10;#&#9;_config.yml&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;source/_posts/hello-world.md&#10;#&#9;themes/3-hexo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/hongqige/hello-word&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml&#10;#&#9;_config.yml&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;source/_posts/hello-world.md&#10;#&#9;themes/3-hexo" />
+    <MESSAGE value="文章目录" />
+    <option name="LAST_COMMIT_MESSAGE" value="文章目录" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/themes/Annie/.idea/vcs.xml">
@@ -452,13 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/hello-world.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/Annie/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
@@ -483,22 +499,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/yuxing/layout/layout.ejs">
+    <entry file="file://$PROJECT_DIR$/themes/yuxing/layout/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="27">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="115" column="19" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/yuxing/layout/nav.ejs">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/yuxing/layout/post.ejs">
       <provider selected="true" editor-type-id="text-editor">
@@ -507,38 +513,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/java/java正则去掉字符串符号.md">
+    <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        <state relative-caret-position="3105">
+          <caret line="115" column="19" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/yuxing/layout/nav.ejs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/yuxing/layout/layout.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/yuxing/layout/aside.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="84" column="6" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/yuxing/layout/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/yuxing/source/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="284" column="19" selection-start-line="284" selection-start-column="19" selection-end-line="284" selection-end-column="19" />
+        <state relative-caret-position="81">
+          <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+          <folding>
+            <element signature="n#div#1;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/yuxing/source/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="143" column="5" lean-forward="true" selection-start-line="143" selection-start-column="5" selection-end-line="143" selection-end-column="5" />
+        <state relative-caret-position="3104">
+          <caret line="153" column="37" selection-start-line="153" selection-start-column="37" selection-end-line="153" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/hello-world.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/java/java正则去掉字符串符号.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DEALLOCATE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EXECUTE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3969" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/mysql/mysql实现有则更新，无则插入.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/mysql/创建中文视图失败解决.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/mysql/常用操作.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/oracle/oracle学生排名.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="96" column="33" lean-forward="true" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/oracle/oracle连续值.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="19" column="96" lean-forward="true" selection-start-line="19" selection-start-column="96" selection-end-line="19" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/oracle/oracle体育馆人流.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="92" column="53" selection-start-line="92" selection-start-column="53" selection-end-line="92" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/真的只是作为测试.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/yuxing/source/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
         </state>
       </provider>
     </entry>

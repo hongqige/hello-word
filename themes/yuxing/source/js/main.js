@@ -4,6 +4,7 @@ $(document).ready(function () {
     searchTree();
     pjaxLoad();
     showArticleIndex();
+    switchTreeOrIndex();
 });
 
 //pjax局部刷新
@@ -150,7 +151,8 @@ function showArticleIndex() {
     $("#toc a").on("click", function (e) {
         e.preventDefault();
         //获取当前点击的a标签，滚动到对应位置（像word的索引一样)
-        var target = $(this.hash);
+        // var target = $(this.hash);
+        var target = $(this);
         $("body,html").animate({"scrollTop": target.offset().top}, 500);
     });
 
@@ -167,5 +169,11 @@ function showArticleIndex() {
                 tocLink.removeClass("read");
             }
         });
+    });
+}
+function switchTreeOrIndex(){
+    $("#search-icon").on("click",function (e) {
+        $("#tree").animate({height:'toggle'},0);
+        $("#toc").animate({height:'toggle'},0);
     });
 }
