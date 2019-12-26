@@ -40,7 +40,6 @@ function clickTreeDirectory() {
         var subTree = $(this).siblings("ul");
 
         icon.removeClass("fa-folder-open").removeClass("fa-folder");
-
         if (iconIsOpen) {
             if (typeof subTree != "undefined") {
                 subTree.slideUp({duration: 100});
@@ -85,11 +84,8 @@ function searchTree() {
     };
 
     $("#search input").on("input", function (e) {
-        console.log("点击搜索");
         e.preventDefault();
-
         var inputContent = e.currentTarget.value;
-
         //没有值的时候把父目录收起来，active的目录展开
         if (inputContent.length === 0) {
             $(".fa-folder-open").removeClass("fa-folder-open").addClass("fa-folder");
@@ -131,9 +127,9 @@ function showArticleIndex() {
 
     //闭包递归，返回树状html格式的文章目录索引
     function show(tocList) {
-        var content = "<ul>";
+        var content = '<ul>';
         tocList.forEach(function (toc) {
-            toc.node.before("<span class='anchor' id= '_label" + toc.id + "'><span> ");
+            toc.node.before("<span class='anchor' id= '_label" + toc.id + "'><span>");
             if (toc.children == 0) {
                 content += "<li><a href='#_label" + toc.id + "'>" + toc.node.text() + "</a></li>";
             } else {
@@ -145,21 +141,21 @@ function showArticleIndex() {
     }
 
     //组合成div方便css设计
-    $("#aside #toc").empty();
-    $("#aside #toc").append(show(h1List));
+    $("aside #toc").empty();
+    $("aside #toc").append(show(h1List));
 
     $("#toc a").on("click", function (e) {
         e.preventDefault();
         //获取当前点击的a标签，滚动到对应位置（像word的索引一样)
-        // var target = $(this.hash);
-        var target = $(this);
-        $("body,html").animate({"scrollTop": target.offset().top}, 500);
+        var target = $(this.hash);
+        // var target = $(this);
+        $("body,html").animate({"scrollTop":target.offset().top}, 500);
     });
 
     //监听浏览器滚动条，浏览过的标签改变颜色
     $(window).on("scroll", function (e) {
         var anchorList = $(".anchor");
-        anchorList.forEach(function () {
+        anchorList.each(function () {
             var tocLink = $("#toc a[href='#" + $(this).attr("id") + "']");
             var anchorTop = $(this).offset().top;
             var windowTop = $(window).scrollTop();
@@ -171,9 +167,10 @@ function showArticleIndex() {
         });
     });
 }
-function switchTreeOrIndex(){
-    $("#search-icon").on("click",function (e) {
-        $("#tree").animate({height:'toggle'},0);
-        $("#toc").animate({height:'toggle'},0);
+
+function switchTreeOrIndex() {
+    $("#search-icon").on("click", function (e) {
+        $("#tree").animate({height: 'toggle'}, 0);
+        $("#toc").animate({height: 'toggle'}, 0);
     });
 }

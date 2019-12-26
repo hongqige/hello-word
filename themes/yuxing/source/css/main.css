@@ -28,6 +28,32 @@ nav {
 }
 
 /*##########################全局#########################*/
+/*##########################主页样式#######################*/
+#articleList {
+    position: absolute;
+}
+
+#articleList .article-li {
+    margin: 20px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px #999;
+    list-style: none;
+    border: 1px solid #999;
+}
+
+#articleList .article-digest * {
+    word-wrap: break-word;
+    display: inline;
+    font-size: 12px;
+    color: #555;
+    text-decoration: none;
+    cursor: auto;
+    /*border-radius: none;*/
+    box-shadow: none;
+}
+
+/*##########################主页样式end#######################*/
 /*#########################nav导航栏美化#########################*/
 nav #menu {
     float: right;
@@ -84,15 +110,16 @@ aside #search i.fa.fa-search {
     text-decoration: none;
 }
 
-aside #search #search-icon:hover{
+aside #search #search-icon:hover {
     cursor: pointer;
-    color:#87daff;
+    color: #87daff;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
 }
+
 /*滚动条*/
 aside {
     overflow-y: scroll;
@@ -294,7 +321,7 @@ aside #toc a {
     -o-transition: 0.2s;
 }
 
-aside #toc a:hover{
+aside #toc a:hover {
     color: #e5c07b;
     padding-left: 20px;
     -webkit-transition: 0.1s;
