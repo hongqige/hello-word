@@ -23,3 +23,12 @@ aside {
 }
 
 /*##########################全局#########################*/
+/*滚动条*/
+#scrollBar{
+    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#main{
+    width: 102vw;
+}

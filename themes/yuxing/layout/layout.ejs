@@ -10,17 +10,18 @@
     <%- css('lib/highlight/styles/atom-one-dark') %>
 </head>
 <body>
-<div id="mian">
+<div id="scrollBar">
+    <div id="main">
 
-    <aside id="aside">
-        <%- include('aside.ejs') %>
-    </aside>
+        <aside id="aside">
+            <%- include('aside.ejs') %>
+        </aside>
 
-    <div id="content">
-        <%- body %>
+        <div id="content">
+            <%- body %>
+        </div>
     </div>
 </div>
-
 <%- js('lib/highlight/highlight.pack.js') %>
 <%- js('lib/jquery-latest.js') %>
 <%- js('lib/jquery.pjax.js') %>
